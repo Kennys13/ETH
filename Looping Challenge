@@ -39,3 +39,7 @@ contract ComplexOperationStressTest {
     }
 }
 
+
+
+In complex operation it consumes f=more gases so there is a chances to throw error because of scarcity of gases while in other complex operation can be easily
+completed becaue it takes less number gases to perform operation.
