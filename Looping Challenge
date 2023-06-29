@@ -12,3 +12,30 @@ contract LoopStressTest {
         return result;
     }
 }
+
+
+//Now for complex operation
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.17;
+
+contract ComplexOperationStressTest {
+    function performComplexOperation() public pure returns (uint) {
+        uint result = 1;
+        
+        for (uint i = 0; i < 100; i++) {
+            result = fibonacci(i);
+        }
+        
+        return result;
+    }
+    
+    function fibonacci(uint n) internal pure returns (uint) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+}
+
